@@ -44,14 +44,14 @@ export default {
   },
   methods: {
     loader() {
-      this.code=`<eos-icons-vue name="${this.iconName}" size="${this.size}" />`
+      this.code=`<eosicons name="${this.iconName}" size="${this.size}" />`
       setTimeout(() => {
         this.selected='';
       }, this.value*1000);
     }
   },
     mounted() {
-      this.code=`<eos-icons-vue name="${this.iconName}" size="${this.size}" />`
+      this.code=`<eosicons name="${this.iconName}" size="${this.size}" />`
       setTimeout(() => {
         this.selected='';
       }, this.value*1000);

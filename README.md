@@ -37,7 +37,7 @@ Vue.use(eosicons);
 In your template
 ```vue
 <template>
-  <eos-icons-vue name="4k" size="10" />
+  <eosicons name="4k" size="10" />
 </template>
 ```
 

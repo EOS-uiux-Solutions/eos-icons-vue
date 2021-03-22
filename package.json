@@ -28,11 +28,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "files": [
-    "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
+    "dist/*"
   ],
   "eslintConfig": {
     "root": true,
