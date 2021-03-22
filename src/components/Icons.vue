@@ -1,36 +1,29 @@
 <template>
-  <component :is="iconComponent"  :style="{'height': size+'em','width':  size+'em',}" />
+  <div class="icon"
+    v-html="require(`../../svg/${name}.svg`)"
+    :style="{'height': size+'em','width':  size+'em',}"
+  />
 </template>
 
 <script>
-const icons = {}
-const requireComponents = require.context('../../svg', false, /.svg$/)
-requireComponents.keys().forEach(fileName => {
-  const iconName = fileName.replace(/^\.\/(.+)\.svg$/, '$1')
-  const componentConfig = requireComponents(fileName)
-  icons[iconName] = componentConfig.default || componentConfig
-})
-
 export default {
   props: {
     name: {
       type: String,
       required: true,
-      validator(value) {
-        return Object.prototype.hasOwnProperty.call(icons, value)
-      }
     },
-    size: {
+     size: {
       type: String,
       required: false,
       default: '10'
     },
-  },
-
-  computed: {
-    iconComponent() {
-      return icons[this.name]
-    },
   }
 }
-</script>>
+</script>
+
+<style scoped>
+.icon {
+  margin: 0 auto;
+}
+</style>
+
