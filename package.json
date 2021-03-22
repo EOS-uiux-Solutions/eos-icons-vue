@@ -7,12 +7,14 @@
     "postinstall": "mkdir -p svg/ && cp node_modules/eos-icons/svg/*.svg svg/ && cp node_modules/eos-icons/svg/material/*.svg svg/ && cp node_modules/eos-icons/animated-svg/*.svg svg/",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name eosicons ./src/components/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
+  "main": "./dist/icons.common.js",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
@@ -25,6 +27,13 @@
     "vue-svg-loader": "^0.15.0",
     "vue-template-compiler": "^2.6.11"
   },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {

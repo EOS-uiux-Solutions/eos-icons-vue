@@ -1,24 +1,48 @@
 # Eos-icons-vue
 
-## Project setup
+## Project setup for running the component locally
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+npm install
+npm run serve
 ```
 
-### Compiles and minifies for production
+## Project setup for building the component
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+npm install
+npm run build-bundle
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Upon running the `npm run build-bundle` command it will build component package in the dist folder which will published on npm. 
+
+## After publishing the package on Npm
+
+### Installation
+
+```bash
+# use yarn
+yarn add eos-icons-vue
+# use npm
+npm install --save eos-icons-vue
+```
+
+## Usage
+
+In your main.js
+```js
+import eosicons from "eos-icons-vue";
+
+Vue.use(eosicons);
+```
+
+In your template
+```vue
+<template>
+  <eos-icons-vue name="4k" size="10" />
+</template>
+```
+
+## Props
+| Name | Type | Default | Description |
+|:-----|:-----|:--------|:------------|
+| name | string | '4k' | To select the different types of icons |
+| size | string | '10' | To set the height and width of the icon |

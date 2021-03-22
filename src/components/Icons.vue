@@ -1,5 +1,5 @@
 <template>
-  <component :is="iconComponent"  style="height: 10em; width: 10em;"/>
+  <component :is="iconComponent"  :style="{'height': size+'em','width':  size+'em',}" />
 </template>
 
 <script>
@@ -19,7 +19,12 @@ export default {
       validator(value) {
         return Object.prototype.hasOwnProperty.call(icons, value)
       }
-    }
+    },
+    size: {
+      type: String,
+      required: false,
+      default: '10'
+    },
   },
 
   computed: {
