@@ -4,7 +4,7 @@
       
       <div class="container form">
         <div class="code-box">
-          <BaseIcon :name="iconName" :size="size"/>
+          <EosIcons :name="iconName" :size="size"/>
         </div>
       </div>
       
@@ -28,12 +28,12 @@
 
 <script>
 
-import BaseIcon from './components/Icons.vue'
+import EosIcons from './components/Icons.vue'
 
 export default {
   name: 'App',
   components: {
-    BaseIcon,
+    EosIcons,
   },
   data() {
     return {
@@ -44,14 +44,14 @@ export default {
   },
   methods: {
     loader() {
-      this.code=`<eosicons name="${this.iconName}" size="${this.size}" />`
+      this.code=`<EosIcons name="${this.iconName}" size="${this.size}" />`
       setTimeout(() => {
         this.selected='';
       }, this.value*1000);
     }
   },
     mounted() {
-      this.code=`<eosicons name="${this.iconName}" size="${this.size}" />`
+      this.code=`<EosIcons name="${this.iconName}" size="${this.size}" />`
       setTimeout(() => {
         this.selected='';
       }, this.value*1000);

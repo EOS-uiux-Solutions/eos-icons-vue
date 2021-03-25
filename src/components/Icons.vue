@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  name: 'EosIcons',
   props: {
     name: {
       type: String,

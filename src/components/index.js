@@ -1,8 +1,8 @@
 import Vue from "vue";
-import Icons from "./Icons.vue";
+import EosIcons from "./Icons.vue";
 
 const Components = {
-    Icons
+    EosIcons
 }
 
 Object.keys(Components).forEach(name => {

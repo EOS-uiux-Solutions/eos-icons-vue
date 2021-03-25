@@ -29,15 +29,15 @@ npm install --save eos-icons-vue
 
 In your main.js
 ```js
-import eosicons from "eos-icons-vue";
+import EosIcons from "eos-icons-vue";
 
-Vue.use(eosicons);
+Vue.use(EosIcons);
 ```
 
 In your template
 ```vue
 <template>
-  <eosicons name="4k" size="10" />
+  <EosIcons name="4k" size="10" />
 </template>
 ```
 
