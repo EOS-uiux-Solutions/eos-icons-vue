@@ -1,5 +1,5 @@
 {
-  "name": "eos-icons-vue",
+  "name": "eos-icons-vue3",
   "version": "0.0.1",
   "description": "",
   "main": "./lib/index.js",
@@ -75,7 +75,7 @@
     "port": 8010,
     "entry": {
       "eos-icons-vue": [
-        "./src/index.jsx"
+        "./src/index.ts"
       ]
     }
   },

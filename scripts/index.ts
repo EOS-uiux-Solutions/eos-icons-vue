@@ -23,23 +23,3 @@ if (process.argv[2] === '--target=outlined') {
     from: 'svg/outlined'
   })
 }
-
-// // Script for generating COMMON theme React SVG components
-// if (process.argv[2] === '--target=common') {
-//   generateIconCommonComponents({
-//     type: 'common',
-//     from: 'svg/filled'
-//   })
-// }
-
-// // Script for generating storybook stories
-// if (process.argv[2] === '--target=stories') {
-//   generateStoryBookStories({
-//     type: 'common',
-//     from: 'svg/filled'
-//   })
-//   generateStoryBookStories({
-//     type: 'animated',
-//     from: 'svg/animated'
-//   })
-// }

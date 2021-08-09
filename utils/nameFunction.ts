@@ -8,13 +8,6 @@ export function nameFunction ({ iconName, type }: NameProps) {
 
   // NAME_THEME
   const fileName = NAME.concat(THEME)
-
-  // function for converting SCREAMING_SNAKE_CASE to PascalCase
-  const toPascalCase = (str: string) => {
-    return str.replace(/(?:^|[-_\/])(\w)/g, (match: string, letter: string) => {
-      return letter.toUpperCase()
-    })
-  }
-
+  
   return (fileName)
 }
