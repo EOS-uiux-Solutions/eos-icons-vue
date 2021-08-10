@@ -10,7 +10,8 @@
     "script:filled": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=filled",
     "script:outlined": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=outlined",
     "script:animated": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=animated",
-    "icon": "mkdir -p src/icons && npm run script:animated && npm run script:filled && npm run script:outlined",
+    "script:common": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=common",
+    "icon": "mkdir -p src/icons && npm run script:animated && npm run script:filled && npm run script:outlined && npm run script:common",
     "compile": "vc-tools run compile",
     "generate": "npm run fetch && npm run icon && npm run compile"
   },
@@ -75,7 +76,7 @@
     "port": 8010,
     "entry": {
       "eos-icons-vue": [
-        "./src/index.ts"
+        "./src/index.jsx"
       ]
     }
   },
