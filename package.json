@@ -69,7 +69,7 @@
       "@semantic-release/github"
     ],
     "branches": [
-      "master"
+      "main"
     ]
   },
   "config": {
