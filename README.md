@@ -6,7 +6,7 @@
 ## Using eos-icons-react in your projects
 Refer to [EOS Icons](https://eos-icons.com/) for more details about all the icons that are supported by EOS-Icons Vue 3
 
-[Storybook EOS-Icons React](https://storybook.eos-icons.com/), checkout storybook for an in-depth look at the various different icons that are provided by EOS-Icons Vue 3 as well the props available for configuring icons.
+[Storybook EOS-Icons](https://storybook.eos-icons.com/), checkout storybook for an in-depth look at the various different icons that are provided by EOS-Icons Vue 3 as well the props available for configuring icons.
 
 ### Installation
 ```
@@ -104,13 +104,13 @@ npm install
 npm run generate
 ```
 
-<!-- ### Testing
+### Testing
 Follow the above steps before running the test command. The test sequence requires the presence of the final build files in order to test them.
 
 - run to start the testing of the final build files using Jest.
 ```
 npm run test
-``` -->
+```
 
 ### Build process
 ![Untitled-2021-07-18-1339](https://user-images.githubusercontent.com/54861487/126060393-13098cd1-e7aa-4fb7-8634-b15e3369f7ff.png)
