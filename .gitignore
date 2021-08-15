@@ -23,8 +23,8 @@ package-lock.json
 *.sln
 *.sw*
 
-lib/
-es/
+lib
+es
 svg
 build/
 .vscode
