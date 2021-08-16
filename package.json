@@ -1,6 +1,6 @@
 {
   "name": "eos-icons-vue3",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Eos-icons Vue 3 package",
   "main": "./lib/index.js",
   "module": "./es/index.js",
